@@ -23,51 +23,48 @@ body{
 }
 
 .container{
-    width: 311px;
-    margin-block-start: 6rem;
-    margin-block-end: 5rem;
+    max-width: 311px;
+    margin-top: 6rem;
+    margin-bottom: 4rem;
 }
 
 .header{
     text-align: center;
-    margin-block-end: 5rem;
+    margin-bottom: 5rem;
 }
 
-.header__pre-title,
-.header__title{
-    margin: 0;
+.header__features,
+.header__title{   
     font-size: 24px;
 }
 
-.header__pre-title{
-    font-weight: 200;
-    color: var(-);    
+[class*="title"]{
+    color: black;     
 }
 
-.header__title{  
-    color: black;
+.margin0{
+    margin: 0;
 }
 
-.main{
-    display: grid;
+.header__features{
+    font-weight: 200;    
 }
 
-.main__card{    
+.main__card{  
+    background-color: var(--Very-Light-Gray);  
     padding:1.5rem 2rem;
     margin-block-end: 1.5rem;
     border: 1px solid #e3e3e3;
     border-radius: 10px; 
-    box-shadow: 0 10px 30px -10px var(--Grayish-Blue);
+    box-shadow: 0 1rem 2rem -1rem var(--Grayish-Blue);
+    border-top: 4px solid var(--child); 
 }
 
-.main__title{
-    color: black;
-    font-size: 20px;
-    margin: 0;
+.main__title{    
+    font-size: 20px;   
 }
 
-.main__text{
-    margin: 0;
+.main__text{    
     font-size: 13px;
     margin-bottom: 3rem;
 }
@@ -75,22 +72,19 @@ body{
 .main__container-img{
     text-align: right;
 }
-.main__img{
-    
+.main__img{    
     width: 56px; 
 }
 
-.main__card:first-child{
-    
-    border-top: 4px solid var(--Cyan); 
+.main__card:first-child{  
+    --child: hsl(180, 62%, 55%)
 }
-
 .main__card:nth-child(2){    
-    border-top: 4px solid var(--Red);    
+    --child:hsl(0, 78%, 62%);
 }
 .main__card:nth-child(3){    
-    border-top: 4px solid var(--Orange);    
+    --child: hsl(34, 97%, 64%);    
 }
 .main__card:nth-child(4){    
-    border-top: 4px solid var(--Blue);    
+    --child: hsl(212, 86%, 64%);   
 }

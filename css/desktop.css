@@ -1,0 +1,43 @@
+body{
+    height: 100vh;    
+}
+
+.container{
+    margin: 0 1rem;     
+    max-width: 1120px;       
+}
+
+.header__features,
+.header__title{    
+    font-size: 36px;    
+}
+
+.header__text{   
+    margin: 1rem auto;
+    width: 500px;
+}
+
+.main{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 2rem;
+}
+
+.main__card{    
+    max-width: 290px;
+    height: 190px;
+}
+
+.main__card:first-child{
+    position: relative;
+    top: 130px;   
+}
+
+
+.main__card:nth-child(3){    
+    grid-column: 2 /3;    
+}
+.main__card:nth-child(4){    
+   position: relative;
+   bottom: 130px;  
+}
